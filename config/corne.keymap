@@ -19,9 +19,9 @@
 // | TAB |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &trans
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
    &kp LSHIFT &kp A &mt LCTRL S &mt LALT D &mt LGUI F &kp G   &kp H &mt GUI J  &mt RALT K     &mt RCTRL L   &kp SEMI &kp RSHIFT
-   &kp TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &trans
+   &kp TAB &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &none
                   &kp LSHIFT &lt 1 BSPC &lt 2 SPACE   &lt 3 RET &lt 2 DEL &kp RSHIFT
                         >;
                 };
@@ -33,8 +33,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp PLUS    &kp ASTRK       &kp N7       &kp N8       &kp N9       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &kp MINUS &kp FSLH &kp N4 &kp N5 &kp N6 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans  &kp N0       &kp N1       &kp N2       &kp N3       &kp EQUAL         &trans   &trans   &trans &trans    &trans &trans
+   &kp MINUS &kp FSLH &kp N4 &kp N5 &kp N6 &trans   &kp LEFT &kp DOWN &kp UP &kp RIGHT &none &none
+   &trans  &kp N0       &kp N1       &kp N2       &kp N3       &kp EQUAL         &none   &none   &none &none    &none &none
                                     &trans     &trans       &trans      &trans  &trans   &trans
                         >;
                 };
