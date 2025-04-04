@@ -8,6 +8,20 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+/ {
+    macros {
+        zed_em_kay: zed_em_kay {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LSHFT>
+                , <&macro_tap &kp Z &kp M &kp K>
+                , <&macro_release &kp LSHFT>
+                ;
+        };
+    };
+};
+
 &mt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -54,7 +68,7 @@
    &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
    &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
    &none &none   &none &none   &none   &none      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &trans &kp K_MUTE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans   &zed_em_kay
                         >;
                 };
         };
