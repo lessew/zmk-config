@@ -29,7 +29,7 @@
         combo_gui_down {
             timeout-ms = <50>;
             key-positions = <7 19>;
-            bindings = <&kp lg(DOWN)>;
+            bindings = <&kp LG(DOWN)>;
         };
         combo_gui_up {
             timeout-ms = <50>;
