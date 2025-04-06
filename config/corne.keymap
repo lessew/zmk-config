@@ -21,24 +21,45 @@
             key-positions = <12 13>;
             bindings = <&kp LC(MINUS)>;
         };
-        combo_f1 {
+        combo_num1 {
             timeout-ms = <50>;
             key-positions = <1 2>;
+            bindings = <&kp N1>;
+        };
+        combo_num2 {
+            timeout-ms = <50>;
+            key-positions = <2 3>;
+            bindings = <&kp N2>;
+        };
+        combo_num3 {
+            timeout-ms = <50>;
+            key-positions = <3 4>;
+            bindings = <&kp N3>;
+        };
+        combo_num4 {
+            timeout-ms = <50>;
+            key-positions = <4 5>;
+            bindings = <&kp N4>;
+        };
+
+        combo_f1 {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
             bindings = <&kp F1>;
         };
         combo_f2 {
             timeout-ms = <50>;
-            key-positions = <2 3>;
+            key-positions = <14 15>;
             bindings = <&kp F2>;
         };
         combo_f3 {
             timeout-ms = <50>;
-            key-positions = <3 4>;
+            key-positions = <15 16>;
             bindings = <&kp F3>;
         };
         combo_f4 {
             timeout-ms = <50>;
-            key-positions = <4 5>;
+            key-positions = <16 17>;
             bindings = <&kp F4>;
         };
         combo_gui_left {
