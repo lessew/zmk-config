@@ -16,6 +16,31 @@
             key-positions = <0 1>;
             bindings = <&kp LC(PLUS)>;
         };
+        combo_ctrl_min {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LC(MINUS)>;
+        };
+        combo_gui_left {
+            timeout-ms = <50>;
+            key-positions = <6 18>;
+            bindings = <&kp LG(LEFT)>;
+        };
+        combo_gui_down {
+            timeout-ms = <50>;
+            key-positions = <7 19>;
+            bindings = <&kp LG(DOWN)>;
+        };
+        combo_gui_up {
+            timeout-ms = <50>;
+            key-positions = <8 20>;
+            bindings = <&kp LG(UP)>;
+        };
+        combo_gui_right {
+            timeout-ms = <50>;
+            key-positions = <9 21>;
+            bindings = <&kp LG(RIGHT)>;
+        };
     };
 };
 
