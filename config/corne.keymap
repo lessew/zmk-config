@@ -11,30 +11,35 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
+        combo_ctrl_plus {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp ESC>;
+            bindings = <&kp LC(PLUS)>;
         };
-        combo_left {
+        combo_ctrl_min {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&kp LC(MIN)>;
+        };
+        combo_gui_left {
             timeout-ms = <50>;
             key-positions = <6 18>;
-            bindings = <&kp LEFT>;
+            bindings = <&kp LG(LEFT)>;
         };
-        combo_down {
+        combo_gui_down {
             timeout-ms = <50>;
             key-positions = <7 19>;
-            bindings = <&kp DOWN>;
+            bindings = <&kp lg(DOWN)>;
         };
-        combo_up {
+        combo_gui_up {
             timeout-ms = <50>;
             key-positions = <8 20>;
-            bindings = <&kp LEFT>;
+            bindings = <&kp LG(UP)>;
         };
-        combo_right {
+        combo_gui_right {
             timeout-ms = <50>;
             key-positions = <9 21>;
-            bindings = <&kp RIGHT>;
+            bindings = <&kp LG(RIGHT)>;
         };
     };
 };
