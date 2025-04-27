@@ -101,6 +101,16 @@
             key-positions = <19 21>;
             bindings = <&kp RGUI>;
         };
+    combo_thumb_enter_left {
+            timeout-ms = <50>;
+            key-positions = <37 38>;
+            bindings = <&kp RET>;
+        };
+    combo_thumb_del_left {
+            timeout-ms = <50>;
+            key-positions = <36 37>;
+            bindings = <&kp DEL>;
+        };
 
     };
 };
