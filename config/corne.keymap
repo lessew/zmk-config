@@ -64,7 +64,7 @@
         combo_win1 {
             timeout-ms = <50>;
             key-positions = <2 14>;
-            bindings = <&kp LGUI(1);
+            bindings = <&kp LGUI(1)>;
         };
         combo_win2 {
             timeout-ms = <50>;
