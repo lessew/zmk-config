@@ -64,22 +64,22 @@
         combo_win1 {
             timeout-ms = <50>;
             key-positions = <2 14>;
-            bindings = <&kp LGUI(1)>;
+            bindings = <&kp LGUI(N1)>;
         };
         combo_win2 {
             timeout-ms = <50>;
             key-positions = <3 15>;
-            bindings = <&kp LGUI(2)>;
+            bindings = <&kp LGUI(N2)>;
         };
         combo_win3 {
             timeout-ms = <50>;
             key-positions = <4 16>;
-            bindings = <&kp LGUI(3)>;
+            bindings = <&kp LGUI(N3)>;
         };
         combo_win4 {
             timeout-ms = <50>;
             key-positions = <5 17>;
-            bindings = <&kp LGUI(4)>;
+            bindings = <&kp LGUI(N4)>;
         };
         combo_gui_left {
             timeout-ms = <50>;
