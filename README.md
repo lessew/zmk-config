@@ -14,7 +14,9 @@
 - tab lower left works
 - esc top left works
 
-# Works
+# Works well
 - numpad left
 - esc top left
 - tab lower left
+- a+d / h+k as homerow modifiers
+- s+f / j+l as homerow modifiers
