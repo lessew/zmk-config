@@ -24,7 +24,19 @@
 # Ideas
 - thumb clusters: shift / layer 1 / space -- enter / layer 2 / backspace
 - homerowmod 1: windows, homerowmod 2: layer 3
-- layer 1: numpad
+- layer 1: numpad, updownleftright vim binding
+- layer 2: special characters
+- layer 3: display and sound and window management
+
+# Shortcuts
+- ctr +
+- ctr -
+- win up
+- win down
+- win left
+- win right
+
+
 
 
 
