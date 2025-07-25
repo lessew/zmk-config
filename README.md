@@ -18,5 +18,14 @@
 - numpad left
 - esc top left
 - tab lower left
-- a+d / h+k as homerow modifiers
-- s+f / j+l as homerow modifiers
+- a+d / h+k as homerow modifiers homerowmod 1
+- s+f / j+l as homerow modifiers homerowmod 2
+
+# Ideas
+- thumb clusters: shift / layer 1 / space -- enter / layer 2 / backspace
+- homerowmod 1: windows, homerowmod 2: layer 3
+- layer 1: numpad
+
+
+
+
