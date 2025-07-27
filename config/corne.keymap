@@ -8,6 +8,10 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT 0
+#define LOWERLAYER   1
+#define RAISELAYER   2
+
 
 / {
     combos {
@@ -69,19 +73,21 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                  display-name = "Base";
 // -----------------------------------------------------------------------------------------
-// |  EST |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-// | SHIFT |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | TAB |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
+// | TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
+// | SHIFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESC    &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I          &kp O         &kp P    &kp BSLH
    &mt LCTRL GRAVE &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
    &kp TAB     &kp Z &kp X       &kp C      &kp V      &kp B  &kp N &kp M      &kp COMMA      &kp DOT       &kp FSLH &kp TAB
-                  &kp LSHIFT &mt LALT BSPC &lt 1 SPACE   &lt 2 RET &mt RALT DEL &kp RSHIFT
+                  &kp LSHIFT &mt LALT BSPC &lt LOWERLAYER SPACE   &lt RAISELAYER RET &mt RALT DEL &kp RSHIFT
 >;
                 };
                 lower_layer {
+              display-name = "Lower";
 // -----------------------------------------------------------------------------------------
 // |  PLUS |  *  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | MIN| / | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -94,8 +100,22 @@
                                     &trans     &trans       &trans      &trans  &trans   &trans
                         >;
                 };
-
                 raise_layer {
+              display-name = "Raise";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
+   &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
+   &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
+                             &kp LSHIFT &kp LGUI   &kp SPACE   &kp RET   &trans   &zed_em_kay
+                        >;
+                };
+                middle_layer {
+              display-name = "Middle";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
