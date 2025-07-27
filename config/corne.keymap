@@ -11,7 +11,7 @@
 #define DEFAULT 0
 #define LOWERLAYER   1
 #define RAISELAYER   2
-#define MIDDLELAYER  3
+#define MIDDLELAYER   3
 
 / {
     combos {
