@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -21,96 +22,6 @@
             key-positions = <12 13>;
             bindings = <&kp LC(MINUS)>;
         };
-        combo_num1 {
-            timeout-ms = <50>;
-            key-positions = <1 2>;
-            bindings = <&kp N1>;
-        };
-        combo_num2 {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp N2>;
-        };
-        combo_num3 {
-            timeout-ms = <50>;
-            key-positions = <3 4>;
-            bindings = <&kp N3>;
-        };
-        combo_num4 {
-            timeout-ms = <50>;
-            key-positions = <4 5>;
-            bindings = <&kp N4>;
-        };
-        combo_f1 {
-            timeout-ms = <50>;
-            key-positions = <13 14>;
-            bindings = <&kp F1>;
-        };
-        combo_f2 {
-            timeout-ms = <50>;
-            key-positions = <14 15>;
-            bindings = <&kp F2>;
-        };
-        combo_f3 {
-            timeout-ms = <50>;
-            key-positions = <15 16>;
-            bindings = <&kp F3>;
-        };
-        combo_f4 {
-            timeout-ms = <50>;
-            key-positions = <16 17>;
-            bindings = <&kp F4>;
-        };
-        combo_win1 {
-            timeout-ms = <50>;
-            key-positions = <2 14>;
-            bindings = <&kp LGUI(N1)>;
-        };
-        combo_win2 {
-            timeout-ms = <50>;
-            key-positions = <3 15>;
-            bindings = <&kp LGUI(N2)>;
-        };
-        combo_win3 {
-            timeout-ms = <50>;
-            key-positions = <4 16>;
-            bindings = <&kp LGUI(N3)>;
-        };
-        combo_win4 {
-            timeout-ms = <50>;
-            key-positions = <5 17>;
-            bindings = <&kp LGUI(N4)>;
-        };
-        combo_gui_left {
-            timeout-ms = <50>;
-            key-positions = <6 18>;
-            bindings = <&kp LG(LEFT)>;
-        };
-        combo_gui_down {
-            timeout-ms = <50>;
-            key-positions = <7 19>;
-            bindings = <&kp LG(DOWN)>;
-        };
-        combo_gui_up {
-            timeout-ms = <50>;
-            key-positions = <8 20>;
-            bindings = <&kp LG(UP)>;
-        };
-        combo_gui_right {
-            timeout-ms = <50>;
-            key-positions = <9 21>;
-            bindings = <&kp LG(RIGHT)>;
-        };
-        combo_plus {
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&kp PLUS>;
-        };
-        combo_min {
-            timeout-ms = <50>;
-            key-positions = <32 33>;
-            bindings = <&kp MINUS>;
-        };
         combo_gui_left_sf {
             timeout-ms = <50>;
             key-positions = <14 16>;
@@ -121,17 +32,6 @@
             key-positions = <19 21>;
             bindings = <&kp RGUI>;
         };
-    combo_thumb_enter_left {
-            timeout-ms = <50>;
-            key-positions = <37 38>;
-            bindings = <&kp RET>;
-        };
-    combo_thumb_del_left {
-            timeout-ms = <50>;
-            key-positions = <36 37>;
-            bindings = <&kp DEL>;
-        };
-
     };
 };
 
