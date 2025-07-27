@@ -11,7 +11,7 @@
 #define DEFAULT 0
 #define LOWERLAYER   1
 #define RAISELAYER   2
-
+#define MIDDLELAYER  3
 
 / {
     combos {
@@ -81,9 +81,9 @@
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp ESC    &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I          &kp O         &kp P    &kp BSLH
-   &mt LCTRL GRAVE &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
-   &kp TAB     &kp Z &kp X       &kp C      &kp V      &kp B  &kp N &kp M      &kp COMMA      &kp DOT       &kp FSLH &kp TAB
-                  &kp LSHIFT &mt LALT BSPC &lt LOWERLAYER SPACE   &lt RAISELAYER RET &mt RALT DEL &kp RSHIFT
+   &kp TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
+   &kp SHIFT     &kp Z &kp X       &kp C      &kp V      &kp B  &kp N &kp M      &kp COMMA      &kp DOT       &kp FSLH &kp TAB
+                  &kp LCTRL &mt LALT BSPC &lt LOWERLAYER SPACE   &lt RAISELAYER RET &mt RALT DEL &kp RSHIFT
 >;
                 };
                 lower_layer {
@@ -117,12 +117,12 @@
                 middle_layer {
               display-name = "Middle";
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// |  ` |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
+   &kp GRAVE  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
    &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
    &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
                              &kp LSHIFT &kp LGUI   &kp SPACE   &kp RET   &trans   &zed_em_kay
