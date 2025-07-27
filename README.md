@@ -37,7 +37,8 @@
 - win right
 
 
-
-
+# Next
+- Adjust homerowmods
+- Learn special keys
 
 
