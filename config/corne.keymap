@@ -60,6 +60,17 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+        ctrl_alt_del: ctrl_alt_del {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp DEL>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
+                ;
+        };
     };
 };
 
@@ -111,7 +122,7 @@
    &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
    &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
    &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
-                             &kp LSHIFT &kp LGUI   &kp SPACE   &kp RET   &trans   &zed_em_kay
+                             &kp LSHIFT &kp LGUI   &kp SPACE   &kp RET   &trans   &ctrl_alt_del
                         >;
                 };
                 middle_layer {
