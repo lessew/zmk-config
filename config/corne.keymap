@@ -105,9 +105,9 @@
 // |    |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp CARET   &kp AMPERSAND  &kp ASTERISK &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp PLUS
+ &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp CARET   &kp AMPERSAND  &kp ASTERISK &none    &none &kp PLUS
    &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp EXCLAMATION  &kp AT &kp HASH &kp DOLLAR &kp PERCENT   &kp MINUS
-   &kp ESC      &kp N0    &kp N1 &kp N2 &kp N3 &kp EQUAL &kp LEFT_BRACE    &kp RIGHT_BRACE  &kp LESS_THAN     &kp GREATER_THAN   &kp DOUBLE_QUOTES &trans
+   &kp ESC      &kp N0    &kp N1 &kp N2 &kp N3 &kp EQUAL &none    &none  &kp LESS_THAN     &kp GREATER_THAN   &kp DOUBLE_QUOTES &trans
                                     &trans     &trans       &trans      &trans  &trans   &trans
                         >;
                 };
@@ -134,7 +134,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp HOME  &none &none &none &none &kp LPAR   &kp RPAR &none  &none &none &none &kp END
-   &kp DOLLAR &none       &none       &none       &none       &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &none &kp UNDERSCORE
+   &kp DOLLAR &none       &none       &none       &none       &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &kp MINUS &kp UNDERSCORE
    &none &none   &none &none   &none   &kp LEFT_BRACKET      &kp RIGHT_BRACKET &none  &none  &none &none &none
                              &none &none   &none   &none  &none   &none
                         >;
