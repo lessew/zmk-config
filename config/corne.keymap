@@ -105,9 +105,9 @@
 // |    |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp CARET   &kp AMPERSAND  &kp ASTERISK &none    &none &kp PLUS
-   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp EXCLAMATION  &kp AT &kp HASH &kp DOLLAR &kp PERCENT   &kp MINUS
-   &kp ESC      &kp N0    &kp N1 &kp N2 &kp N3 &kp EQUAL &none    &none  &kp LESS_THAN     &kp GREATER_THAN   &kp DOUBLE_QUOTES &trans
+ &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp CARET   &kp AMPERSAND  &kp ASTERISK &none    &none &none
+   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp EXCLAMATION  &kp AT &kp HASH &kp DOLLAR &kp PERCENT   &none
+   &kp ESC      &kp N0    &kp N1 &kp N2 &kp N3 &kp EQUAL &none    &none  &kp LESS_THAN     &kp GREATER_THAN   &none &trans
                                     &trans     &trans       &trans      &trans  &trans   &trans
                         >;
                 };
