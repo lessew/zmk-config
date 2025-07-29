@@ -9,9 +9,10 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define LOWERLAYER   1
-#define RAISELAYER   2
-#define MIDDLELAYER   3
+#define EXCEL_WINDOWMANAGER   1
+#define DEVELOPMENT   2
+#define PERIPHERALS   3
+
 
 / {
     combos {
@@ -29,7 +30,7 @@
         homerowmod_1_ad {
             timeout-ms = <50>;
             key-positions = <13 15>;
-            bindings = <&mo RAISELAYER>;
+            bindings = <&mo PERIPHERALS>;
         };
         homerowmod_2_sf {
             timeout-ms = <50>;
@@ -39,7 +40,7 @@
         homerowmod_1_hk {
             timeout-ms = <50>;
             key-positions = <18 20>;
-            bindings = <&mo RAISELAYER>;
+            bindings = <&mo PERIPHERALS>;
         };
         homerowmod_2_jl{
             timeout-ms = <50>;
@@ -94,11 +95,11 @@
    &kp ESC    &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I          &kp O         &kp P    &kp BSLH
    &kp TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHIFT     &kp Z &kp X       &kp C      &kp V      &kp B  &kp N &kp M      &kp COMMA      &kp DOT       &kp FSLH &kp GRAVE 
-                  &kp HOME &mt LCTRL BSPC &lt LOWERLAYER SPACE   &lt MIDDLELAYER RET &mt RALT DEL &kp END
+                  &kp HOME &mt LCTRL BSPC &lt EXCEL_WINDOWMANAGER SPACE   &lt DEVELOPMENT RET &mt RALT DEL &kp END
 >;
                 };
                 lower_layer {
-              display-name = "Lower";
+              display-name = "Excel_Windowmanager";
 // -----------------------------------------------------------------------------------------
 // |  PLUS |  *  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | MIN| / | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -111,22 +112,8 @@
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
                         >;
                 };
-                raise_layer {
-              display-name = "Raise";
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
-                        bindings = <
-   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
-   &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
-   &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
-                             &none &none   &none   &none   &none   &ctrl_alt_del
-                        >;
-                };
                 middle_layer {
-              display-name = "Middle";
+              display-name = "Development";
 // -----------------------------------------------------------------------------------------
 // | HOME |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -137,6 +124,20 @@
    &none &none       &kp DOLLAR       &kp PERCENT       &kp AMPERSAND      &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &none &none
    &none &none   &kp EXCLAMATION &kp AT    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET &none  &none  &none &none &none
                              &kp DOLLAR &none   &none   &none  &none   &kp UNDERSCORE
+                        >;
+                };
+                raise_layer {
+              display-name = "Peripherals";
+// -----------------------------------------------------------------------------------------
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
+// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
+// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    | GUI |     | SPC |   | ENT |     | ALT |
+                        bindings = <
+   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
+   &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
+   &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
+                             &none &none   &none   &none   &none   &ctrl_alt_del
                         >;
                 };
         };
