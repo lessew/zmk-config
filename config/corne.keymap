@@ -78,7 +78,7 @@
             bindings
                 = <&macro_tap &kp RG(T)>
                 ;
-        }
+        };
     };
 };
 
