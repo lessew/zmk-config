@@ -76,7 +76,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(T)>
+                = <&macro_tap &kp RG(B)>
                 ;
         };
         chrome_open: chrome_open {
