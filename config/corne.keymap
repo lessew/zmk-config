@@ -150,7 +150,7 @@
                         bindings = <
  &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &terminal_open  &chrome_open  &vivaldi_open &firefox_open    &todoist_open &obsidian_open
    &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none   &none
-   &kp RET     &none   &kp N1 &kp N2 &kp N3 &kp EQUAL &none    &none  &none     &none   &none &trans
+   &kp RET     &none   &kp N1 &kp N2 &kp N3 &kp EQUAL &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)    &none &trans
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
                         >;
                 };
@@ -178,7 +178,7 @@
                         bindings = <
    &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
    &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
-   &none &none   &none &none   &none   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT) &trans &kp K_MUTE
+   &none &none   &none &none   &none   &none      &none &none  &none  &none &trans &kp K_MUTE
                              &none &none   &none   &none   &none   &ctrl_alt_del
                         >;
                 };
