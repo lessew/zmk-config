@@ -72,6 +72,13 @@
                 , <&macro_release &kp LALT>
                 ;
         };
+        open_terminal: open_terminal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RG(T)
+                ;
+        }
     };
 };
 
@@ -106,7 +113,7 @@
 // |    |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &none  &none  &none &none    &none &none
+ &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &open_terminal  &none  &none &none    &none &none
    &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none   &none
    &none     &none   &kp N1 &kp N2 &kp N3 &kp EQUAL &none    &none  &none     &none   &none &trans
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
