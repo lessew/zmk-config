@@ -162,8 +162,8 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp GRAVE  &none &none &none &none &kp LPAR   &kp RPAR &none  &none &none &none &none
-   &none &none       &kp DOLLAR       &kp PERCENT       &kp AMPERSAND      &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &none &none
+   &kp GRAVE  &none &kp CARET &kp ASTRK &none &kp LPAR   &kp RPAR &none  &none &none &none &none
+   &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &none &none
    &kp DOLLAR &none   &kp EXCLAMATION &kp AT    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET &none  &none  &none &none &kp UNDERSCORE 
                              &kp EQUAL &none   &none   &none  &none   &none
                         >;
