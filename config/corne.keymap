@@ -90,7 +90,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(V)>
+                = <&macro_tap &kp RG(D)>
                 ;
         }; 
         firefox_open: firefox_open {
@@ -104,14 +104,14 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(O)>
+                = <&macro_tap &kp RG(J)>
                 ;
         };
       todoist_open: todoist_open {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(T)>
+                = <&macro_tap &kp RG(I)>
                 ;
         };
     };
