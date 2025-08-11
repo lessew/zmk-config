@@ -15,42 +15,6 @@
 
 
 / {
-    combos {
-        compatible = "zmk,combos";
-        combo_ctrl_plus {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&ctrl_plus>;
-        };
-        combo_ctrl_min {
-            timeout-ms = <50>;
-            key-positions = <12 13>;
-            bindings = <&ctrl_min>;
-        };
-        homerowmod_1_ad {
-            timeout-ms = <50>;
-            key-positions = <13 15>;
-            bindings = <&mo PERIPHERALS>;
-        };
-        homerowmod_2_sf {
-            timeout-ms = <50>;
-            key-positions = <14 16>;
-            bindings = <&kp LGUI>;
-        };
-        homerowmod_1_hk {
-            timeout-ms = <50>;
-            key-positions = <18 20>;
-            bindings = <&mo PERIPHERALS>;
-        };
-        homerowmod_2_jl{
-            timeout-ms = <50>;
-            key-positions = <19 21>;
-            bindings = <&kp RGUI>;
-        };
-    };
-};
-
-/ {
     macros {
         zed_em_kay: zed_em_kay {
             compatible = "zmk,behavior-macro";
@@ -129,6 +93,43 @@
             bindings
                 = <&macro_tap &kp RG(I)>
                 ;
+        };
+    };
+};
+
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_ctrl_plus {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&ctrl_plus>;
+        };
+        combo_ctrl_min {
+            timeout-ms = <50>;
+            key-positions = <12 13>;
+            bindings = <&ctrl_min>;
+        };
+        homerowmod_1_ad {
+            timeout-ms = <50>;
+            key-positions = <13 15>;
+            bindings = <&mo PERIPHERALS>;
+        };
+        homerowmod_2_sf {
+            timeout-ms = <50>;
+            key-positions = <14 16>;
+            bindings = <&kp LGUI>;
+        };
+        homerowmod_1_hk {
+            timeout-ms = <50>;
+            key-positions = <18 20>;
+            bindings = <&mo PERIPHERALS>;
+        };
+        homerowmod_2_jl{
+            timeout-ms = <50>;
+            key-positions = <19 21>;
+            bindings = <&kp RGUI>;
         };
     };
 };
