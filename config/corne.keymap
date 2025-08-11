@@ -27,6 +27,7 @@
         };
         ctrl_min: ctrl_min {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RGUI>
                 , <&macro_tap &kp MINUS>
@@ -35,6 +36,7 @@
             };
         ctrl_plus: ctrl_plus {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RGUI>
                 , <&macro_tap &kp PLUS>
