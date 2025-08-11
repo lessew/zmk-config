@@ -20,12 +20,12 @@
         combo_ctrl_plus {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp LC(PLUS)>;
+            bindings = <&ctrl_plus>;
         };
         combo_ctrl_min {
             timeout-ms = <50>;
             key-positions = <12 13>;
-            bindings = <&kp LC(MINUS)>;
+            bindings = <&ctrl_min>;
         };
         homerowmod_1_ad {
             timeout-ms = <50>;
@@ -61,6 +61,22 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+        ctrl_min: ctrl_min {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp MINUS>
+                , <&macro_release &kp RGUI>
+                ;
+            };
+        ctrl_plus: ctrl_plus {
+            compatible = "zmk,behavior-macro";
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp PLUS>
+                , <&macro_release &kp RGUI>
+                ;
+            };
         ctrl_alt_del: ctrl_alt_del {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
