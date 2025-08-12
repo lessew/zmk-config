@@ -66,18 +66,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI>
+                = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp MINUS>
-                , <&macro_release &kp RGUI>
+                , <&macro_release &kp RCTRL>
                 ;
             };
         ctrl_plus: ctrl_plus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_press &kp RGUI>
+                = <&macro_press &kp RCTRL>
                 , <&macro_tap &kp PLUS>
-                , <&macro_release &kp RGUI>
+                , <&macro_release &kp RCTRL>
                 ;
             };
         ctrl_alt_del: ctrl_alt_del {
