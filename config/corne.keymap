@@ -183,9 +183,9 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp GRAVE  &none &kp AMPERSAND &kp ASTRK &none &kp LPAR   &kp RPAR &none  &none &none &none &none
-   &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &kp LEFT BRACE         &kp LEFT &kp DOWN &kp UP  &kp DOWN &none &none
-   &kp DOLLAR &none   &kp EXCLAMATION &kp AT    &kp HASH   &kp LEFT_BRACKET      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP) &kp LG(DOWN) &none &kp UNDERSCORE 
+   &kp GRAVE  &none &kp AMPERSAND &kp ASTRK &none &none   &none &none  &none &none &none &none
+   &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &none         &kp LEFT &kp DOWN &kp UP  &kp DOWN &none &none
+   &kp DOLLAR &none   &kp EXCLAMATION &kp AT    &kp HASH   &none      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP) &kp LG(DOWN) &none &none 
                              &kp EQUAL &none   &none   &none  &none   &none
                         >;
                 };
