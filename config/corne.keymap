@@ -162,21 +162,21 @@
 >;
                 };
                 lower_layer {
-              display-name = "Excel_Windowmanager";
+              display-name = "Excel_Apps";
 // -----------------------------------------------------------------------------------------
 // |  PLUS |  *  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
 // | MIN| / | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
 // |    |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &terminal_open  &chrome_open  &vivaldi_open &firefox_open    &todoist_open &obsidian_open
-   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp RPAR  &kp LEFT  &kp DOWN &kp UP &kp RIGHT &none   &none
-   &kp RET     &none   &kp N1 &kp N2 &kp N3 &kp EQUAL &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP)  &kp LG(RIGHT)    &none &trans
+ &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp RPAR  &chrome_open  &vivaldi_open &firefox_open    &todoist_open &obsidian_open
+   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &none &none   &terminal_open
+   &kp RET     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &trans
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
                         >;
                 };
                 middle_layer {
-              display-name = "Development";
+              display-name = "Development_Windowmanager";
 // -----------------------------------------------------------------------------------------
 // | HOME |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -184,8 +184,8 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp GRAVE  &none &kp AMPERSAND &kp ASTRK &none &kp LPAR   &kp RPAR &none  &none &none &none &none
-   &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &kp LEFT_BRACE         &kp RIGHT_BRACE &none &none  &none &none &none
-   &kp DOLLAR &none   &kp EXCLAMATION &kp AT    &kp HASH   &kp LEFT_BRACKET      &kp RIGHT_BRACKET &none  &none  &none &none &kp UNDERSCORE 
+   &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &kp LEFT BRACE         &kp LEFT &kp DOWN &kp UP  &kp DOWN &none &none
+   &kp DOLLAR &none   &kp EXCLAMATION &kp AT    &kp HASH   &kp LEFT_BRACKET      &kp LG(LEFT) &kp LG(DOWN)  &kp LG(UP) &kp LG(DOWN) &none &kp UNDERSCORE 
                              &kp EQUAL &none   &none   &none  &none   &none
                         >;
                 };
