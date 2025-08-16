@@ -176,7 +176,7 @@
                         >;
                 };
                 middle_layer {
-              display-name = "Development_Windowmanager";
+              display-name = "Specialchars_Windowmanager";
 // -----------------------------------------------------------------------------------------
 // | HOME |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BSPC |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
