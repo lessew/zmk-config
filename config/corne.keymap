@@ -140,6 +140,13 @@
                 = <&macro_tap &kp RG(M)>
                 ;
         };
+    calendar_open: calendar_open {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RG(K)>
+                ;
+        };
     };
 };
 
