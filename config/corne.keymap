@@ -147,6 +147,13 @@
                 = <&macro_tap &kp RG(K)>
                 ;
         };
+ slack_open: slack_open {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp RG(P)>
+                ;
+        };
     };
 };
 
@@ -184,7 +191,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
  &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp RPAR  &chrome_open  &vivaldi_open &firefox_open    &todoist_open &obsidian_open
-   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &none &none   &terminal_open
+   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &calendar_open &slack_open   &terminal_open
    &kp RET     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ide_open
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
                         >;
