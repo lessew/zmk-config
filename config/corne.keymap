@@ -98,7 +98,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp b>
+                , <&macro_tap &kp B>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -110,7 +110,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp c>
+                , <&macro_tap &kp C>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -122,7 +122,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp d>
+                , <&macro_tap &kp D>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -134,7 +134,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp f>
+                , <&macro_tap &kp F>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -146,7 +146,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp i>
+                , <&macro_tap &kp I>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -158,7 +158,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp k>
+                , <&macro_tap &kp K>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -170,7 +170,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp m>
+                , <&macro_tap &kp M>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
@@ -182,7 +182,7 @@
             bindings
                 = <&macro_press &kp LCTRL>
                 , <&macro_press &kp LALT>
-                , <&macro_tap &kp p>
+                , <&macro_tap &kp P>
                 , <&macro_release &kp LCTRL>
                 , <&macro_release &kp LALT>
                 ;
