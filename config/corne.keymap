@@ -91,67 +91,100 @@
                 , <&macro_release &kp LALT>
                 ;
         };
-        terminal_open: terminal_open {
+
+        ctrl_alt_b: ctrl_alt_b {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(B)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp b>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
-        chrome_open: chrome_open {
+
+        ctrl_alt_c: ctrl_alt_c {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(C)>
-                ;
-        }; 
-        vivaldi_open: vivaldi_open {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp RG(D)>
-                ;
-        }; 
-        firefox_open: firefox_open {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_tap &kp RG(F)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp c>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
-      obsidian_open: obsidian_open {
+
+        ctrl_alt_d: ctrl_alt_d {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(J)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp d>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
-      todoist_open: todoist_open {
+
+        ctrl_alt_f: ctrl_alt_f {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(I)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp f>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
-    ide_open: ide_open {
+
+        ctrl_alt_i: ctrl_alt_i {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(M)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp i>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
-    calendar_open: calendar_open {
+
+        ctrl_alt_k: ctrl_alt_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(K)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp k>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
- slack_open: slack_open {
+
+        ctrl_alt_m: ctrl_alt_m {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
-                = <&macro_tap &kp RG(P)>
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp m>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
+        ctrl_alt_p: ctrl_alt_p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp p>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
                 ;
         };
     };
@@ -190,9 +223,9 @@
 // |    |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
- &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp RPAR  &chrome_open  &vivaldi_open &firefox_open    &todoist_open &obsidian_open
-   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &calendar_open &slack_open   &terminal_open
-   &kp RET     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ide_open
+ &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp RPAR  &ctrl_alt_c  &ctrl_alt_d &ctrl_alt_f    &ctrl_alt_i &ctrl_alt_j
+   &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &ctrl_alt_k &ctrl_alt_p   &ctrl_alt_b
+   &kp RET     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ctrl_alt_m
                                     &kp N0    &trans       &trans      &trans  &trans   &trans
                         >;
                 };
