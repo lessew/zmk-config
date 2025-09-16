@@ -152,6 +152,18 @@
                 ;
         };
 
+ctrl_alt_j: ctrl_alt_j {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp J>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
         ctrl_alt_k: ctrl_alt_k {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
