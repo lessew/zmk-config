@@ -250,7 +250,7 @@ ctrl_alt_j: ctrl_alt_j {
  &kp PLUS    &kp ASTRK &kp N7 &kp N8 &kp N9 &kp LPAR  &kp RPAR  &ctrl_alt_c  &ctrl_alt_d &ctrl_alt_f    &ctrl_alt_i &ctrl_alt_j
    &kp MINUS   &kp FSLH  &kp N4 &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &ctrl_alt_k &ctrl_alt_p   &ctrl_alt_b
    &kp RET     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ctrl_alt_m
-                                    &kp N0    &trans       &trans      &ctrl_alt_n  &trans   &trans
+                                &kp N0    &ctrl_alt_n       &trans      &ctrl_alt_n  &trans   &trans
                         >;
                 };
                 middle_layer {
