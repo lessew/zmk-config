@@ -12,6 +12,7 @@
 #define EXCEL_WINDOWMANAGER   1
 #define DEVELOPMENT   2
 #define PERIPHERALS   3
+#define WINDOWMANAGER_LEFT 4
 
 
 / {
@@ -47,6 +48,16 @@
             key-positions = <19 21>;
             bindings = <&kp RGUI>;
         };
+        thumb_1_2 {
+            timeout-ms = <50>;
+            key-positions = <19 21>;
+            bindings = <&to WINDOWMANAGER_LEFT>;
+        }
+        thumb_2_3 {
+            timeout-ms = <50>;
+            key-positions = <19 21>;
+            bindings = <&to RGUI>;
+        }
     };
 };
 
@@ -279,6 +290,15 @@ ctrl_alt_j: ctrl_alt_j {
    &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
    &none &none   &none &none   &none   &none      &none &none  &none  &none &trans &kp K_MUTE
                              &none &none   &none   &none   &none   &ctrl_alt_del
+                        >;
+                };
+lefthand_layer {
+              display-name = "Apps Left";
+                        bindings = <
+ &ctrl_alt_j    &ctrl_alt_i &ctrl_alt_f &ctrl_alt_d &ctrl_alt_c &kp LPAR  &kp RPAR  &ctrl_alt_c  &ctrl_alt_d &ctrl_alt_f    &ctrl_alt_i &ctrl_alt_j
+   &ctrl_alt_b   &ctrl_alt_p  &ctrl_alt_k &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &ctrl_alt_k &ctrl_alt_p   &ctrl_alt_b
+   &ctrl_alt_m     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ctrl_alt_m
+                                &kp N0    &ctrl_alt_n       &trans      &ctrl_alt_n  &trans   &trans
                         >;
                 };
         };
