@@ -52,12 +52,12 @@
             timeout-ms = <50>;
             key-positions = <19 21>;
             bindings = <&to WINDOWMANAGER_LEFT>;
-        }
+        };
         thumb_2_3 {
             timeout-ms = <50>;
             key-positions = <19 21>;
             bindings = <&to RGUI>;
-        }
+        };
     };
 };
 
