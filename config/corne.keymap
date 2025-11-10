@@ -283,6 +283,18 @@ ctrl_alt_j: ctrl_alt_j {
                 ;
         };
 
+ ctrl_alt_5: ctrl_alt_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_press &kp LALT>
+                , <&macro_tap &kp N6>
+                , <&macro_release &kp LCTRL>
+                , <&macro_release &kp LALT>
+                ;
+        };
+
     };
 };
 
