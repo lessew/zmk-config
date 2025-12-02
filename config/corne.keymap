@@ -9,8 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define EXCEL_WINDOWMANAGER   1
-#define DEVELOPMENT   2
+#define EXCEL_APPS   1
+#define SPECIAL_WINDOWS   2
 #define PERIPHERALS   3
 #define MOUSE 4
 
@@ -315,7 +315,7 @@ ctrl_alt_j: ctrl_alt_j {
    &kp ESC    &kp Q &kp W       &kp E      &kp R      &kp T   &kp Y &kp U      &kp I          &kp O         &kp P    &kp BSLH
    &mt LCTRL TAB &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &mt RCTRL SQT
    &kp HOME     &kp Z &kp X       &kp C      &kp V      &kp B  &kp N &kp M      &kp COMMA      &kp DOT       &kp FSLH &kp END 
-                  &kp LSHIFT &mt LGUI BSPC &lt EXCEL_WINDOWMANAGER SPACE   &lt DEVELOPMENT RET &mt RALT DEL &kp RSHIFT
+                  &kp LSHIFT &mt LGUI BSPC &lt EXCEL_APPS SPACE   &lt SPECIAL_WINDOWS RET &mt RALT DEL &kp RSHIFT
 >;
                 };
                 lower_layer {
@@ -349,7 +349,7 @@ mouse {
               display-name = "Mouse";
                         bindings = <
  &ctrl_alt_j    &ctrl_alt_i &ctrl_alt_f &ctrl_alt_d &ctrl_alt_c &kp LPAR  &kp RPAR  &ctrl_alt_c  &ctrl_alt_d &ctrl_alt_f    &ctrl_alt_i &ctrl_alt_j
-   &ctrl_alt_b   &ctrl_alt_p  &ctrl_alt_k &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &ctrl_alt_k &ctrl_alt_p   &ctrl_alt_b
+   &ctrl_alt_b   &ctrl_alt_p  &ctrl_alt_k &kp N5 &kp N6 &kp LEFT_BRACE  &mvv MOVE_LEFT  &mvv MOVE_DOWN &mvv MOVE_UP &mvv MOVE_RIGHT &none &none
    &ctrl_alt_m     &kp EQUAL   &kp N1 &kp N2 &kp N3 &kp LEFT_BRACKET &kp RIGHT_BRACKET &none  &none  &none    &none &ctrl_alt_m
                                 &kp N0    &ctrl_alt_n       &trans      &ctrl_alt_n  &trans   &trans
                         >;
