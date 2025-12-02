@@ -12,7 +12,7 @@
 #define EXCEL_WINDOWMANAGER   1
 #define DEVELOPMENT   2
 #define PERIPHERALS   3
-#define WINDOWMANAGER_LEFT 4
+#define MOUSE 4
 
 
 / {
@@ -51,13 +51,13 @@
         thumb_1_2 {
             timeout-ms = <50>;
             key-positions = <19 21>;
-            bindings = <&mt WINDOWMANAGER_LEFT>;
+            bindings = <&lt MOUSE>;
         };
-        thumb_2_3 {
+        /* thumb_2_3 {
             timeout-ms = <50>;
             key-positions = <19 21>;
             bindings = <&kp RGUI>;
-        };
+        }; */
     };
 };
 
@@ -345,8 +345,8 @@ ctrl_alt_j: ctrl_alt_j {
                              &none &none   &none   &none   &none   &ctrl_alt_del
                         >;
                 };
-lefthand_layer {
-              display-name = "Apps Left";
+mouse {
+              display-name = "Mouse";
                         bindings = <
  &ctrl_alt_j    &ctrl_alt_i &ctrl_alt_f &ctrl_alt_d &ctrl_alt_c &kp LPAR  &kp RPAR  &ctrl_alt_c  &ctrl_alt_d &ctrl_alt_f    &ctrl_alt_i &ctrl_alt_j
    &ctrl_alt_b   &ctrl_alt_p  &ctrl_alt_k &kp N5 &kp N6 &kp LEFT_BRACE  &kp RIGHT_BRACE  &none &none &ctrl_alt_k &ctrl_alt_p   &ctrl_alt_b
