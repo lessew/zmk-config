@@ -95,7 +95,7 @@
             #binding-cells = <0>;
             bindings
                 = <&macro_press &kp RGUI>
-                , <&macro_tap &kp PLUS>
+                , <&macro_tap &kp EQUAL>
                 , <&macro_release &kp RGUI>
                 ;
             };
@@ -358,7 +358,7 @@ ctrl_alt_j: ctrl_alt_j {
                         bindings = <
    &kp GRAVE  &none &kp AMPERSAND &kp ASTRK &none &none   &ctrl_alt_1 &ctrl_alt_2  &ctrl_alt_3 &ctrl_alt_4 &ctrl_alt_5 &ctrl_alt_6
    &none &none       &kp DOLLAR       &kp PERCENT       &kp CARET      &none         &kp LEFT &kp DOWN &kp UP  &kp RIGHT &none &none
-   &kp UNDERSCORE &none   &kp EXCLAMATION &kp AT    &kp HASH   &none      &gui_min &gui_plus   &ctrl_plus &ctrl_min &none &kp DOLLAR  
+   &kp UNDERSCORE &none   &kp EXCLAMATION &kp AT    &kp HASH   &none      &kp LG(MINUS) &kp LG(EQUAL)   &ctrl_plus &ctrl_min &none &kp DOLLAR  
                              &kp EQUAL &none   &none   &none  &kp LG(LEFT_BRACKET)  &kp LG(RIGHT_BRACKET)
                         >;
                 };
