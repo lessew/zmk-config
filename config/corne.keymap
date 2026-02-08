@@ -64,7 +64,7 @@
         thumb_4_5 {
             timeout-ms = <50>;
             key-positions = <39 40>;
-            bindings = <&kp MOUSE>;
+            bindings = <&mo PERIPHERALS>;
         }; 
     };
 };
@@ -365,9 +365,9 @@ ctrl_alt_j: ctrl_alt_j {
                 raise_layer {
               display-name = "Peripherals";
                         bindings = <
-   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp PAGE_UP  &kp PAGE_DOWN &none &none &kp K_VOL_UP
-   &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &kp LEFT  &kp DOWN &kp UP  &kp RIGHT &none &kp K_VOL_DN
-   &none &none   &none &none   &none   &none      &none &none  &none  &none &trans &kp K_MUTE
+   &kp C_BRIGHTNESS_INC  &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &none &none  &none: &none &none &kp K_VOL_UP
+   &kp C_BRIGHTNESS_DEC  &bt BT_CLR       &none       &none       &none       &none         &none  &none &none &none &none &kp K_VOL_DN
+   &none &none   &none &none   &none   &none      &none &none  &none  &none &none &kp K_MUTE
                              &none &none   &none   &none   &none   &ctrl_alt_del
                         >;
                 };
