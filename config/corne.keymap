@@ -81,6 +81,24 @@
                 , <&macro_release &kp LSHFT>
                 ;
         };
+        gui_min: gui_min {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp MINUS>
+                , <&macro_release &kp RGUI>
+                ;
+            };
+        gui_plus: gui_plus {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp RGUI>
+                , <&macro_tap &kp PLUS>
+                , <&macro_release &kp RGUI>
+                ;
+            };
         ctrl_min: ctrl_min {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
