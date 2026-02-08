@@ -17,13 +17,13 @@
 #define EXCEL_APPS   1
 #define SPECIAL_WINDOWS   2
 #define PERIPHERALS   3
-#define MOUSE 4
+#define MOUSE   4
 
 
 / {
     combos {
         compatible = "zmk,combos";
-        combo_ctrl_plus {
+/*        combo_ctrl_plus {
             timeout-ms = <50>;
             key-positions = <0 1>;
             bindings = <&ctrl_plus>;
@@ -33,7 +33,9 @@
             key-positions = <12 13>;
             bindings = <&ctrl_min>;
         };
-/*        homerowmod_1_ad {
+*/
+/*
+        homerowmod_1_ad {
             timeout-ms = <50>;
             key-positions = <13 15>;
             bindings = <&mo PERIPHERALS>;
